@@ -2,20 +2,20 @@
     "name": "copy-under",
     "displayName": "copy-under",
     "description": "Copies selected text to a new file",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "kevin-felichko",
     "icon": "images/copy-under.svg",
     "repository": {
         "type": "git",
         "url": "https://github.com/kfelichko/copy-under"
-    },    
+    },
     "engines": {
         "vscode": "^1.5.0"
     },
     "keywords": [
         "copy selected text to new file",
         "duplicate selected text"
-    ],    
+    ],
     "categories": [
         "Other"
     ],
@@ -24,15 +24,19 @@
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.copyUnder",
-            "title": "Copy Under"
-        }],
-        "keybindings": [{
-            "key": "alt+shift+c",
-            "mac": "alt+shift+c",
-            "command": "extension.copyUnder"
-        }]
+        "commands": [
+            {
+                "command": "extension.copyUnder",
+                "title": "Copy Under"
+            }
+        ],
+        "keybindings": [
+            {
+                "key": "alt+shift+c",
+                "mac": "alt+shift+c",
+                "command": "extension.copyUnder"
+            }
+        ]
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install"
